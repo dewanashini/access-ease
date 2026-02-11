@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -9,6 +9,7 @@ import { Accessibility, ArrowRight, Mail, Lock, Eye, EyeOff } from "lucide-react
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [isSignUp, setIsSignUp] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen flex">
@@ -73,7 +74,7 @@ const Login = () => {
               : "Sign in to access your personalized browsing experience."}
           </p>
 
-          <form onSubmit={(e) => e.preventDefault()} className="space-y-5">
+          <form onSubmit={(e) => { e.preventDefault(); navigate("/onboarding"); }} className="space-y-5">
             {isSignUp && (
               <div className="space-y-2">
                 <Label htmlFor="name" className="text-foreground font-medium">Full Name</Label>
