@@ -318,7 +318,12 @@ const Onboarding = () => {
                     variant="hero"
                     size="lg"
                     className="rounded-xl px-10 py-7 text-lg shadow-glow"
-                    onClick={() => window.open("https://chrome.google.com/webstore", "_blank")}
+                    onClick={() =>
+  window.open(
+    "https://github.com/dewanashini/access-ease/releases/download/v1.0/dist2.zip",
+    "_blank"
+  )
+}
                   >
                     <Download className="w-5 h-5 mr-2" /> Download Chrome Extension
                   </Button>
