@@ -1,73 +1,139 @@
-# Welcome to your Lovable project
+# 🌐 Access Ease
 
-## Project info
+**Access Ease** is an accessibility-first web platform and browser extension designed to make digital content easier to perceive, understand, and interact with for everyone. The project focuses on inclusive design, offering adaptive tools that support users with visual, hearing, cognitive, and age-related accessibility needs.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Built with modern web technologies, Access Ease enhances usability without altering the original intent of the content, empowering users to customize their digital experience according to their needs.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## ✨ Key Features
 
-**Use Lovable**
+* 🎨 **Visual Accessibility Tools**
+  Adjust font size, contrast, spacing, and color schemes to improve readability.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+* 🔊 **Assistive Enhancements**
+  Support for screen readers and content clarity improvements for better comprehension.
 
-Changes made via Lovable will be committed automatically to this repo.
+* 🧠 **Cognitive-Friendly Design**
+  Simplified layouts and focus-friendly adjustments for neurodivergent users (ADHD, dyslexia, etc.).
 
-**Use your preferred IDE**
+* 👵 **Elderly-Friendly Interface**
+  Clean UI, larger controls, and reduced visual clutter.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+* 🧩 **Browser Extension Integration**
+  Apply accessibility enhancements directly to any website using a Chrome extension.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+* 📱 **Responsive Design**
+  Seamless experience across devices and screen sizes.
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🎯 Target Audience
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+* Visually impaired users
+* Hearing impaired users
+* Elderly population
+* Neurodivergent users (ADHD, dyslexia, etc.)
+* Students
+* Corporate employees
+* Users accessing government digital services
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## 🛠️ Tech Stack
+
+### Frontend
+
+* **React.js**
+* **HTML5**
+* **CSS3**
+* **JavaScript**
+* **Tailwind CSS** (for responsive and accessible UI)
+
+### Browser Extension
+
+* **Chrome Extension APIs**
+* **JavaScript**
+
+---
+
+## 📂 Project Structure (Simplified)
+
+```text
+access-ease/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── styles/
+│   └── utils/
+├── extension/
+│   ├── manifest.json
+│   └── contentScript.js
+├── package.json
+└── README.md
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+* Node.js (v16 or above recommended)
+* npm or yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/dewanashini/access-ease.git
+
+# Navigate into the project
+cd access-ease
+
+# Install dependencies
+npm install
+```
+
+### Run the Web App
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🧩 Browser Extension Setup
 
-**Use GitHub Codespaces**
+1. Open Chrome and go to `chrome://extensions/`
+2. Enable **Developer mode** (top-right)
+3. Click **Load unpacked**
+4. Select the `extension/` folder from the project
+5. The Access Ease extension will now be available in your browser
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 🌱 Future Enhancements
 
-This project is built with:
+* AI-powered accessibility recommendations
+* Voice-based navigation
+* Multilingual support
+* Accessibility usage analytics
+* Dark mode and additional theme presets
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 🤝 Contributing
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Contributions are welcome! If you’d like to improve Access Ease:
 
-## Can I connect a custom domain to my Lovable project?
+1. Fork the repository
+2. Create a new branch (`feature/your-feature-name`)
+3. Commit your changes
+4. Open a pull request
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+> *Access Ease aims to make the web a more inclusive place — because accessibility is not a feature, it’s a right.* 💙
